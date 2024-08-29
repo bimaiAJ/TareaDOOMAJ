@@ -1,0 +1,144 @@
+/* Estilos generales para PC */
+body {
+    background: pink;
+}
+
+.encabezado {
+    width: 100%;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.encabezado-y-botones {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botones {
+    float: right;
+}
+
+.boton {
+    margin-left: 5px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.boton:hover {
+    background-color: greenyellow;
+}
+
+
+.contenedor-principal {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.MiProgreso, .MisLogros, .Demostracion {
+    display: inline-block;
+    background: lightblue;
+    padding: 20px;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: -2px;
+}
+
+.MiProgreso {
+    display: inline-block;
+    width: 30%;
+}
+
+.MisLogros {
+    width: 40%;
+    background: greenyellow;
+    border-color: red;
+}
+
+.Demostracion {
+    width: 30%;
+}
+.ajustar-imagen{
+    width: 100%;
+}
+
+footer {
+    width: 80%;
+    max-width: 1200px;
+    text-align: right;
+    margin: 20px auto;
+}
+
+
+@media (max-width: 1024px) {
+    body{
+        background: yellow;
+    }
+
+    .contenedor-principal {
+        width: 70%;
+        display: block; /* Cambia a bloque para que los elementos se apilen verticalmente */
+    }
+
+    .MiProgreso, .MisLogros, .Demostracion {
+        width: 100%; /* Cada elemento ocupará el 100% del ancho */
+        margin-bottom: 10px; /* Añade espacio entre los elementos */
+        font-size: 25px; /* Ajusta el tamaño de la letra según sea necesario */
+    }
+
+    .botones {
+        float: none;
+        text-align: center; /* Centra los botones */
+        margin-top: 10px;
+    }
+
+    .encabezado-y-botones {
+        text-align: center; /* Centra el contenido en tabletas */
+    }
+    .centrar, .centrar2{
+        text-align: center;
+    }
+}
+
+/* Estilos para teléfonos (ancho máximo de 480px) */
+@media (max-width: 600px) {
+    body{
+        background: orange;
+    }
+    .contenedor-principal {
+        width: 90%;
+        display: block;
+    }
+
+    .MiProgreso, .MisLogros, .Demostracion {
+        width: 100%;
+        padding: 15px; /* Reduce un poco el padding en teléfonos */
+        margin-bottom: 10px;
+    }
+
+    .botones {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .encabezado-y-botones {
+        text-align: center;
+    }
+    .ajustar-imagen{
+        width: 90%;
+    }
+
+    .boton {
+        padding: 8px 16px; /* Reduce el padding de los botones en teléfonos */
+    }
+
+    footer {
+        width: 100%; /* Asegura que el footer ocupe el ancho completo */
+        text-align: center; /* Centra el texto en teléfonos */
+    }
+}
