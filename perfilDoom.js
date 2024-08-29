@@ -172,7 +172,7 @@ const centrarDiv = document.createElement('div');
 centrarDiv.className = 'centrar';
 
 const fotoImg = document.createElement('img');
-fotoImg.src = 'imagenes/softball.jpeg';
+fotoImg.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__aYis8LVkyV_wKJR6XZgzkzMBMAg6Y1c3g&s" alt="seleccion sub-18 Guatemala" class="img-fluid rounded margen-img';
 fotoImg.alt = 'seleccion sub-18 Guatemala';
 fotoImg.className = 'ajustar-imagen';
 
